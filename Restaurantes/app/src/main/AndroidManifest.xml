@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CatalogoImagenesActivity"></activity>
-        <activity android:name=".DatosActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activities.CatalogoImagenesActivity"></activity>
+        <activity android:name=".Activities.DatosActivity" />
+        <activity android:name=".Activities.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

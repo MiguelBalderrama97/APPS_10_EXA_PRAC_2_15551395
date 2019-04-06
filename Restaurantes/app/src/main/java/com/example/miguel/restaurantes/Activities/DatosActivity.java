@@ -1,4 +1,4 @@
-package com.example.miguel.restaurantes;
+package com.example.miguel.restaurantes.Activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,6 +8,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.example.miguel.restaurantes.R;
+
 public class DatosActivity extends AppCompatActivity {
     Intent inImg;
     final int MY_IMG_REQUEST = 42;
@@ -16,6 +18,9 @@ public class DatosActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_datos);
+
+        getSupportActionBar().setTitle("DATOS");
+
     }
 
     public void onClick(View v){

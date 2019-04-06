@@ -1,10 +1,11 @@
-package com.example.miguel.restaurantes;
+package com.example.miguel.restaurantes.Activities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import com.example.miguel.restaurantes.R;
 
 public class MainActivity extends AppCompatActivity {
     Intent inDatos;

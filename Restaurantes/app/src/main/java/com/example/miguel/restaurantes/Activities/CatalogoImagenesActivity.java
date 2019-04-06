@@ -1,7 +1,9 @@
-package com.example.miguel.restaurantes;
+package com.example.miguel.restaurantes.Activities;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.miguel.restaurantes.R;
 
 public class CatalogoImagenesActivity extends AppCompatActivity {
 

@@ -3,22 +3,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
     android:orientation="vertical"
-    tools:context=".DatosActivity">
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DATOS"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+    tools:context=".Activities.DatosActivity"
+    android:padding="16dp">
 
     <ImageView
         android:id="@+id/imgVwCom"
         android:layout_width="match_parent"
-        android:layout_height="350dp"
+        android:layout_height="300dp"
         android:onClick="onClick"
         app:srcCompat="@drawable/barrafina" />
 
@@ -33,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Restaruatne chido.."
+        android:hint="Restaurante chido.."
         android:inputType="textPersonName" />
 
     <TextView
