@@ -69,22 +69,28 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnCap"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="capturar"/>
+            android:onClick="onClick"
+            android:text="capturar" />
 
         <Button
+            android:id="@+id/btnMostrar"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="mostrar"/>
+            android:onClick="onClick"
+            android:text="mostrar" />
 
         <Button
+            android:id="@+id/btnSalir"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="salir"/>
+            android:onClick="onClick"
+            android:text="salir" />
 
     </LinearLayout>
 
