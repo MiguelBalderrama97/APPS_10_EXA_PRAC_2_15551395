@@ -12,7 +12,7 @@ import com.example.miguel.restaurantes.Models.Restaurante;
 import com.example.miguel.restaurantes.R;
 
 public class MainActivity extends AppCompatActivity {
-    
+
     private Intent inDatos, inList;
 
     Restaurante rDato;
@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
                 String nom = data.getStringExtra("nom");
                 String desc = data.getStringExtra("desc");
                 String dir=data.getStringExtra("dir");
-                rDato = new Restaurante(nom,desc,dir,icon,1); //Este es el mero dato
+                rDato = new Restaurante(nom,desc,dir,icon,R.mipmap.ic_cero_starts); //Este es el mero dato
+                ListaRestaurantesActivity.restaurantes.add(rDato);
 
             }else if(resultCode == Activity.RESULT_CANCELED){
                 Toast.makeText(getApplicationContext(),"Cancelado",Toast.LENGTH_SHORT).show();
