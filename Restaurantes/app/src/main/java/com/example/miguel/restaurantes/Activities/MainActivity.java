@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 String nom = data.getStringExtra("nom");
                 String desc = data.getStringExtra("desc");
                 String dir=data.getStringExtra("dir");
-                rDato = new Restaurante(nom,desc,dir,icon,R.mipmap.ic_cero_starts); //Este es el mero dato
+                rDato = new Restaurante(nom,desc,dir,icon,R.mipmap.ic_cero_starts,0); //Este es el mero dato
                 ListaRestaurantesActivity.restaurantes.add(rDato);
 
             }else if(resultCode == Activity.RESULT_CANCELED){

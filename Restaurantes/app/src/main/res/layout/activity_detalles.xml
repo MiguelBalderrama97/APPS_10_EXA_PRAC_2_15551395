@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.DetallesActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/imgDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/barrafina"/>
+
+    <TextView
+        android:id="@+id/txtNomDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Café El Calicanto"
+        android:textStyle="bold"
+        android:textSize="35dp"
+        android:paddingTop="10dp"/>
+
+    <TextView
+        android:id="@+id/txtDescDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Café y restaurante"
+        android:textStyle="italic"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/txtDirDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Calle Victoria #1235"
+        android:textStyle="bold"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tu opinión:"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/imgStar1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_white_stars"
+            android:background="#0000"/>
+        <ImageButton
+            android:id="@+id/imgStar2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_white_stars"
+            android:background="#0000"/>
+        <ImageButton
+            android:id="@+id/imgStar3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@mipmap/ic_white_stars"
+            android:background="#0000"/>
+
+    </LinearLayout>
+
+</LinearLayout>
