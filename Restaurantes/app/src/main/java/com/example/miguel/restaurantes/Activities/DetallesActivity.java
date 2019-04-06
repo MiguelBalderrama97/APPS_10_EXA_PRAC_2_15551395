@@ -3,11 +3,13 @@ package com.example.miguel.restaurantes.Activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.miguel.restaurantes.Models.Restaurante;
 import com.example.miguel.restaurantes.R;
 
 import org.w3c.dom.Text;
@@ -17,6 +19,7 @@ public class DetallesActivity extends AppCompatActivity {
     private ImageView imgIcon;
     private TextView txtNom, txtDesc, txtDir;
     private ImageButton ibtnStar1, ibtnStar2, ibtnStar3;
+    private Restaurante restaurant;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,6 +36,10 @@ public class DetallesActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle bundle = intent.getExtras();
+
+
+        int position = bundle.getInt("position");
+        restaurant = ListaRestaurantesActivity.restaurantes.get(position);
 
         getSupportActionBar().setTitle("EVALUACIÓN");
 
@@ -63,6 +70,32 @@ public class DetallesActivity extends AppCompatActivity {
                 ibtnStar3.setImageResource(R.mipmap.ic_black_stars);
                 break;
         }
-        Toast.makeText(this, bundle.getInt("Rating2")+"", Toast.LENGTH_SHORT).show();
+
+        ibtnStar1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                restaurant.setCalif2(1);
+                restaurant.setCalif(R.mipmap.ic_one_star);
+                finish();
+            }
+        });
+
+        ibtnStar2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                restaurant.setCalif2(2);
+                restaurant.setCalif(R.mipmap.ic_two_stars);
+                finish();
+            }
+        });
+
+        ibtnStar3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                restaurant.setCalif2(3);
+                restaurant.setCalif(R.mipmap.ic_three_stars);
+                finish();
+            }
+        });
     }
 }

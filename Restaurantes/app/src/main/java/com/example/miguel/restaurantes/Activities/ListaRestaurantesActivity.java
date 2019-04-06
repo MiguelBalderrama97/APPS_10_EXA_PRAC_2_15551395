@@ -36,6 +36,13 @@ public class ListaRestaurantesActivity extends AppCompatActivity implements List
         listView.setAdapter(myAdapter);
 
         listView.setOnItemClickListener(this);
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        myAdapter.notifyDataSetChanged();
     }
 
     @Override
@@ -49,6 +56,7 @@ public class ListaRestaurantesActivity extends AppCompatActivity implements List
         bundle.putInt("Rating", currentRest.getCalif());
         bundle.putInt("Imagen", currentRest.getIcon());
         bundle.putInt("Rating2", currentRest.getCalif2());
+        bundle.putInt("position",position);
         inDetalles.putExtras(bundle);
         startActivity(inDetalles);
     }

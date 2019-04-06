@@ -9,12 +9,14 @@ import android.view.View;
 import com.example.miguel.restaurantes.R;
 
 public class CatalogoImagenesActivity extends AppCompatActivity {
-    Intent inDatos;
+    private Intent inDatos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalogo_imagenes);
+
+        getSupportActionBar().setTitle("SELECCIONA LA IMAGEN");
 
     }
 

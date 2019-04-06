@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
 
     private Intent inDatos, inList;
 
-    Restaurante rDato;
+    private Restaurante rDato;
     final int RESTARUANTE_REQUEST=420;
 
 

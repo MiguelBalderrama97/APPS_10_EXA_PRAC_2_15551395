@@ -8,13 +8,6 @@
     tools:context=".Activities.CatalogoImagenesActivity"
     android:padding="16dp">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="SELECCIONA LA IMAGEN:"
-        android:textSize="30sp" />
-
     <ImageView
         android:id="@+id/imgVw1"
         android:layout_width="match_parent"
