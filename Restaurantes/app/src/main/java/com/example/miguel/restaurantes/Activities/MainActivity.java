@@ -8,7 +8,7 @@ import android.view.View;
 import com.example.miguel.restaurantes.R;
 
 public class MainActivity extends AppCompatActivity {
-    Intent inDatos;
+    private Intent inDatos, inList;
 
 
     @Override
@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         inDatos = new Intent(this,DatosActivity.class);
+        inList = new Intent(this, ListaRestaurantesActivity.class);
 
     }
 
@@ -25,10 +26,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(inDatos);
                 break;
             case R.id.btnMostrar:
-                startActivity(inDatos);
+                startActivity(inList);
                 break;
             case R.id.btnSalir:
-                startActivity(inDatos);
+                finish();
                 break;
         }
     }
